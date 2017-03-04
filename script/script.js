@@ -46,7 +46,7 @@ queue()
             .append('circle')
             .attr('cx',function(d){
                 d.x = albersProjection([d.long,+d.lat])[0];
-                return albersProjection([d.long,+d.lat])[0];
+                return albersProjection([d.long,+d.lat])[0] +5;
             })
             .attr('cy',function(d){
                 d.y = albersProjection([d.long,+d.lat])[1];
