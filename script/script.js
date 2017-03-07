@@ -19,7 +19,7 @@ var map = d3.select('.canvas')
     //class to make it responsive
     .classed("svg-content-responsive", true)
     .append('g').attr('class','map')
-    //.attr('transform','translate('+margin.l+','+margin.t+')')
+    .attr('transform','translate('+margin.l+','+margin.t+')')
     .on("click", stopped, true);
 
 
@@ -31,7 +31,7 @@ map.append("rect")
     .attr("class", "rect-background")
     .attr('width',width)
     .attr('height',height)
-    //.attr('transform','translate('+margin.l+','+margin.t+')')
+    .attr('transform','translate('+margin.l+','+margin.t+')')
     .on("click", reset);
 
 var lngLatBoston = [-71.0589,42.3601]
