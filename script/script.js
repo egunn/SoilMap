@@ -138,7 +138,7 @@ queue()
                 }
                 else if (zoomedTracker == true){
 
-                    d3.select(this).transition().attr('fill-opacity',1).attr('r',3);
+                    d3.select(this).transition().attr('fill-opacity',1);//.attr('r',3);
 
                     g.append('text')
                         .attr('x',d.x+3)
@@ -152,7 +152,13 @@ queue()
 
             })
             .on('mouseout',function(d){
-                d3.select(this).transition().attr('fill-opacity',.5).attr('r',3);
+                if(zoomedTracker == false){
+                    d3.selectAll('.points').transition().attr('fill-opacity',.5).attr('r',3);
+                }
+                else{
+                    d3.selectAll('.points').transition().attr('fill-opacity',.5).attr('r',2);
+                }
+
                 d3.selectAll('.text-label').remove();
 
             });
@@ -214,6 +220,7 @@ function reset() {
 
 function zoomed() {
     if (d3.event.transform.k > 1){
+        d3.selectAll('.points').attr('r',2);
         zoomedTracker = true;
     }
     else {
