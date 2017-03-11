@@ -138,7 +138,7 @@ queue()
                 }
                 else if (zoomedTracker == true){
 
-                    d3.select(this).transition().attr('fill-opacity',1).attr('r',2);
+                    d3.select(this).transition().attr('fill-opacity',1).attr('r',3);
 
                     g.append('text')
                         .attr('x',d.x+3)
