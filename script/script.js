@@ -116,7 +116,7 @@ queue()
                 return albersProjection([d.long,+d.lat])[1];
             })
             //.attr('transform','translate(20,250)')
-            .attr('r',2)
+            .attr('r',3)
             .attr('fill-opacity',.5)
             .attr('fill','purple')
             .on('mouseover',function(d){
@@ -152,7 +152,7 @@ queue()
 
             })
             .on('mouseout',function(d){
-                d3.select(this).transition().attr('fill-opacity',.5).attr('r',2);
+                d3.select(this).transition().attr('fill-opacity',.5).attr('r',3);
                 d3.selectAll('.text-label').remove();
 
             });
@@ -213,7 +213,7 @@ function reset() {
 }
 
 function zoomed() {
-    if (d3.event.transform.k == 8){
+    if (d3.event.transform.k > 1){
         zoomedTracker = true;
     }
     else {
@@ -226,7 +226,7 @@ function zoomed() {
 }
 
 // If the drag behavior prevents the default click,
-// also stop propagation so we don’t click-to-zoom.
+// also stop propagation so we donï¿½t click-to-zoom.
 function stopped() {
     if (d3.event.defaultPrevented) d3.event.stopPropagation();
 }
