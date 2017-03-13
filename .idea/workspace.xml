@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7c94d2b-bb68-4f32-9bb6-3d3fc2bfc8db" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/script.js" afterPath="$PROJECT_DIR$/script/script.js" />
-    </list>
+    <list default="true" id="f7c94d2b-bb68-4f32-9bb6-3d3fc2bfc8db" name="Default" comment="" />
     <ignored path="Assignment-6.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -194,12 +191,12 @@
       <workItem from="1488599245932" duration="7090000" />
       <workItem from="1489192771070" duration="364000" />
       <workItem from="1489193331829" duration="190000" />
-      <workItem from="1489193602029" duration="305000" />
+      <workItem from="1489193602029" duration="446000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7949000" />
+    <option name="totallyTimeSpent" value="8090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
