@@ -84,8 +84,8 @@ queue()
             .attr("class", "mesh")
             .attr("d", path);
 
-
 /*
+
         //Draw states as separate <path> elements
         map.selectAll('.state')
             .data(states.features)
@@ -187,6 +187,8 @@ queue()
     });
 
 function clicked(d) {
+
+    console.log('here');
     if (active.node() === this) return reset();
     active.classed("active", false);
     active = d3.select(this).classed("active", true);
